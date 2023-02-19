@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 
 .home-page {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(/Images/University-image.jpg) fixed center center/cover;
-    min-height: 100vh;
+    min-height: 80rem;
     width: 100%;
     position: relative;
 }
@@ -22,45 +23,55 @@ html {
 /* NAVIGATION */
 
 
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 7.6rem;
-    padding: 0 1.8rem;
+.nav-list {
+    float: right;
 }
 
-.header-nav {
-    padding: 0 3rem;
+nav ul li {
+    display: inline-block;
+    line-height: 7rem;
 }
 
 .logo-img {
-    height: 4.3rem;
+    padding-top: 1rem 1rem;
+    margin: 1rem 1rem;
+    height: 7.3rem;
 }
 
-.main-nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
 
-}
-
-.main-nav-list a {
+nav ul li a {
     text-decoration: none;
-    display: inline-block;
     font-size: 1.8rem;
     color: #ffff;
     transition: 0.3s;
+    padding: .8rem 2rem;
+    transition: .3s;
 
 }
 
-.main-nav-list a:hover {
-    background-color: #D61355;
+nav ul li a:hover {
+    background-color: #0081C9;
     border-radius: 0.5rem;
-    padding: 0.6rem 1.5rem;
     border: 2px solid #ffff;
     font-weight: 600;
+}
+
+#check-btn {
+    float: right;
+    line-height: 8rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: #fefefe;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+
 }
 
 /* MAIN_SECTION */
@@ -97,7 +108,7 @@ html {
 }
 
 .btn:hover {
-    background-color: #D61355;
+    background-color: #0081C9;
     border: none;
     font-size: 1.5rem;
     font-weight: 600;
@@ -258,7 +269,7 @@ html {
 }
 
 .contact-box-all {
-    padding-top: 10rem;
+    padding-top: 8rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -320,6 +331,10 @@ html {
     font-size: 1.3rem;
     transition: 0.3s;
     margin-left: 7rem;
+}
+
+.btn-contact :hover {
+    background-color: #0081C9;
 }
 
 /* ABOUT US */
@@ -404,4 +419,4 @@ html {
 
 .footer-about p {
     font-size: 1.2rem;
-    font-weight: about
+}
