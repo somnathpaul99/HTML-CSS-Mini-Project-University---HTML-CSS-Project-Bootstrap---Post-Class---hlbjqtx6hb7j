@@ -78,6 +78,10 @@
     }
 
     /* CONTACT PAGE */
+    .contact {
+        height: 112rem;
+    }
+
     .contact-box-all {
         flex-direction: column;
         margin: auto;
